@@ -123,8 +123,8 @@
 <script>
 function validateForm() {
     var x = document.forms["myForm"]["idnumb"].value;
-    if (x == null || x.length < 11) {
-        alert("Name must be filled out");
+    if (x == null || x.length !== 11) {
+        alert("გთხოვთ შეიყვანოთ სწორი პირადი ნომერი");
         return false;
     }
 }
