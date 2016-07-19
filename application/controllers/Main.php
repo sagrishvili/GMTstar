@@ -9,7 +9,7 @@ class Main extends CI_Controller {
 		}
 
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('name' , 'saxeli' , 'trim|required');
+		$this->form_validation->set_rules('name' , 'saxeli' , 'trim|htmlentities|required');
 		$this->form_validation->set_rules('email' , 'email' , 'required|valid_email');
 		$this->form_validation->set_rules('idnumb' , 'number' , 'required|numeric|min_length[11]');
 		$this->form_validation->set_rules('date' , 'date' , 'required');
